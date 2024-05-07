@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/user_pic"
+        android:layout_width="136dp"
+        android:layout_height="141dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_user"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901"
+        tools:layout_editor_absoluteX="137dp"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="user@email.com"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        tools:layout_editor_absoluteX="152dp" />
+
+    <TextView
+        android:id="@+id/txt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Usuario"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_email"
+        tools:layout_editor_absoluteX="164dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="337dp"
+        android:layout_height="268dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="37dp">
+
+        <TextView
+            android:id="@+id/txt_turnoU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tú Turno"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/num_turno"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.333"
+            tools:layout_editor_absoluteX="121dp" />
+
+        <TextView
+            android:id="@+id/num_turno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="45"
+            android:textColor="#3F51B5"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_turnoA"
+            tools:layout_editor_absoluteX="134dp" />
+
+        <TextView
+            android:id="@+id/txt_turnoA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Turno Actual"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/num_fila"
+            tools:layout_editor_absoluteX="100dp" />
+
+        <TextView
+            android:id="@+id/num_fila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="16"
+            android:textColor="#3F51B5"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="134dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="121dp"
+        android:layout_height="118dp"
+        android:src="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="-9dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
